@@ -67,6 +67,7 @@ class IncomeController extends Controller
             'source' => $request->source,
             'description' => $request->description,
         ]);
+        
 
         return redirect()->route('incomes.index')
             ->with('success', 'Pemasukan berhasil dicatat');
